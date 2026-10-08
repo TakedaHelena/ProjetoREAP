@@ -1,0 +1,15 @@
+input:focus, textarea:focus, select:focus {
+    background-color: aqua;
+}
+
+input, textarea, select {
+    padding: 3px;
+    border: 1px solid gray;
+
+}
+
+.f{
+    margin: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+}

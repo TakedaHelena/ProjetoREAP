@@ -70,6 +70,7 @@ p {
     color: rgb(130, 156, 211);
     font-size: 20px;
     margin-top: 20px;
+    font-size: 25px;
 }
 
 a {
@@ -80,6 +81,10 @@ a {
 
 .caixa{
   background-color: rgb(202, 239, 253);
+  margin: auto;
+  margin-left: 20%;
+  margin-right: 15%;
+  border-radius: 15px;
   
 }
 
@@ -92,4 +97,6 @@ a {
   margin-left: 20%;
   margin-right: 20%;
 }
+
+
 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="F.css">
+</head>
+<body>
+    <fieldset> 
+        <legend> Dados Pessoais</legend>
+  
+    <form>
+     <div class="f">
+    
+        <div>
+           <label for="nome">Nome: </label><br>
+           <input type="text" id="nome"/><br>
+           <label for="email">Email: </label><br>
+           <input type="text" id="email"/><br>
+           <label for="numero">Número: </label><br>
+           <input type="text" id="numero"/>
+        </div>
+          <p>
+        <div> 
+            Sexo: </br>
+           <input type="radio" name="sex" value="feminino"/>Feminino<br/>
+           <input type="radio" name="sex" value="masculino"/>Masculino<br/>
+           <input type="radio" name="sex" value="Outro"/>Outro<br/>
+       </div>
+    
+       <div>
+           Estado: </br>
+           <input type="radio" name="status" value="casado"/>Casado(a)<br/>
+           <input type="radio" name="status" value="solteiro"/>Solteiro(a)<br/>
+           <input type="radio" name="status" value="noivo"/>Noivo(a)<br/>
+       </div>
+
+       <div>
+        Profissão: <br/>
+        <select name="profissao">
+
+           <option value="estudante">Estudante</option>
+           <option value="professor">Professor</option>
+           <option value="engenheiro">Engenheiro</option>
+           <option value="economista">Economista</option>
+           <option value="medico">Médico</option>
+
+        </select>
+       </div>
+       <div>
+        Idade: <br>
+        <input type="text" id="idade"/>
+       </div>
+
+       </fieldset>
+
+       <fieldset>
+        <legend>Campo Profissional</legend>
+        Escolaridade: <br/>
+        <input type="checkbox" name="escolaridade" value="E.F"/>Ensino Fundamental<br/>
+        <input type="checkbox" name="escolaridade" value="E.E"/>Ensino Médio<br/>
+        <input type="checkbox" name="escolaridade" value="E.S"/>Ensino Superior<br/>
+
+        Experiência Profissional: <br/>
+        <input type="text" id="experiencia profissional">
+
+       </fieldset>
+
+       <fieldset>
+        <legend>Habilidades</legend>
+        <input type="text" id="habilidades">
+
+       </fieldset>
+          <p>
+       <fieldset>
+        <legend>Bens</legend>
+       <div>
+           Veículo: </br>
+           <input type="checkbox" name="veiculo" value="moto"/>Moto<br/>
+           <input type="checkbox" name="veiculo" value="bicicleta"/>Bicicleta<br/>
+           <input type="checkbox" name="veiculo" value="automovel"/>Automóvel<br/>
+       </div>
+          <p>
+       
+        </fieldset>
+          <p>
+        <div>
+            Comentários: </br>
+               <textarea rows="3" cols="50" name="observacoes"
+                      placeholder="digite aqui suas observações">
+                    
+               </textarea>
+        </div>
+          <p>
+       <div>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </div>
+
+         </div>
+    </form>
+    
+
+    
+</body>
+</html>
