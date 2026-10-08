@@ -1,3 +1,95 @@
-body {
-  cursor: url('patinha-mini.png') 8 8, auto;
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    table {
+        width: 95%;
+    }
 }
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    form {
+        width: 85%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+
+
+html {
+  cursor: url('pata.jpg'), auto;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+h1 {
+    text-align: center;
+    color: #a2b1da;
+    font-size: 50px;
+    margin-top: 20px;
+    background-color: rgb(68, 99, 155);
+}
+
+h2 {
+    text-align: center;
+    color: #407aa0;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+
+p {
+    text-align: center;
+    color: rgb(130, 156, 211);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+a {
+    color: rgb(127, 194, 233);
+}
+
+
+
+.caixa{
+  background-color: rgb(202, 239, 253);
+  
+}
+
+.pesquisa{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+  background-color: #cfecff;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
