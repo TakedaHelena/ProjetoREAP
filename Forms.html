@@ -1,107 +1,194 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário de Adoção - REAP!</title>
     <link rel="stylesheet" href="F.css">
 </head>
+
 <body>
-    <fieldset> 
-        <legend> Dados Pessoais</legend>
-  
+
+    <h1>REAP!</h1>
+    <h2>Formulário de Adoção</h2>
+
+    <p>Preencha os dados abaixo para iniciar o processo de adoção!</p>
+
     <form>
-     <div class="f">
-    
-        <div>
-           <label for="nome">Nome: </label><br>
-           <input type="text" id="nome"/><br>
-           <label for="email">Email: </label><br>
-           <input type="text" id="email"/><br>
-           <label for="numero">Número: </label><br>
-           <input type="text" id="numero"/>
-        </div>
-          <p>
-        <div> 
-            Sexo: </br>
-           <input type="radio" name="sex" value="feminino"/>Feminino<br/>
-           <input type="radio" name="sex" value="masculino"/>Masculino<br/>
-           <input type="radio" name="sex" value="Outro"/>Outro<br/>
-       </div>
-    
-       <div>
-           Estado: </br>
-           <input type="radio" name="status" value="casado"/>Casado(a)<br/>
-           <input type="radio" name="status" value="solteiro"/>Solteiro(a)<br/>
-           <input type="radio" name="status" value="noivo"/>Noivo(a)<br/>
-       </div>
 
-       <div>
-        Profissão: <br/>
-        <select name="profissao">
+        <h2>Seus dados</h2>
 
-           <option value="estudante">Estudante</option>
-           <option value="professor">Professor</option>
-           <option value="engenheiro">Engenheiro</option>
-           <option value="economista">Economista</option>
-           <option value="medico">Médico</option>
+        <label>Nome completo:</label>
+        <input type="text" name="nome" required>
 
-        </select>
-       </div>
-       <div>
-        Idade: <br>
-        <input type="text" id="idade"/>
-       </div>
+        <br><br>
 
-       </fieldset>
+        <label>CPF:</label>
+        <input type="text" name="cpf" placeholder="000.000.000-00" required>
 
-       <fieldset>
-        <legend>Campo Profissional</legend>
-        Escolaridade: <br/>
-        <input type="checkbox" name="escolaridade" value="E.F"/>Ensino Fundamental<br/>
-        <input type="checkbox" name="escolaridade" value="E.E"/>Ensino Médio<br/>
-        <input type="checkbox" name="escolaridade" value="E.S"/>Ensino Superior<br/>
+        <br><br>
 
-        Experiência Profissional: <br/>
-        <input type="text" id="experiencia profissional">
+        <label>Data de nascimento:</label>
+        <input type="date" name="nascimento" required>
 
-       </fieldset>
+        <br><br>
 
-       <fieldset>
-        <legend>Habilidades</legend>
-        <input type="text" id="habilidades">
+        <label>Email:</label>
+        <input type="email" name="email" required>
 
-       </fieldset>
-          <p>
-       <fieldset>
-        <legend>Bens</legend>
-       <div>
-           Veículo: </br>
-           <input type="checkbox" name="veiculo" value="moto"/>Moto<br/>
-           <input type="checkbox" name="veiculo" value="bicicleta"/>Bicicleta<br/>
-           <input type="checkbox" name="veiculo" value="automovel"/>Automóvel<br/>
-       </div>
-          <p>
-       
-        </fieldset>
-          <p>
-        <div>
-            Comentários: </br>
-               <textarea rows="3" cols="50" name="observacoes"
-                      placeholder="digite aqui suas observações">
-                    
-               </textarea>
-        </div>
-          <p>
-       <div>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Limpar">
-        </div>
+        <br><br>
 
-         </div>
+        <label>Telefone:</label>
+        <input type="tel" name="telefone" required>
+
+        <br><br>
+
+        <label>Endereço completo:</label>
+        <input type="text" name="endereco" required>
+
+        <br><br>
+
+        <h2>Sobre sua moradia</h2>
+
+        <label>Onde o animal vai morar?</label>
+
+        <br>
+
+        <input type="radio" name="moradia" value="Casa" required>
+        Casa
+
+        <input type="radio" name="moradia" value="Apartamento">
+        Apartamento
+
+        <input type="radio" name="moradia" value="Outro">
+        Outro
+
+        <br><br>
+
+        <label>Se marcou "Outro", informe o local:</label>
+        <input type="text" name="outroLocal">
+
+        <br><br>
+
+        <label>O imóvel é próprio ou alugado?</label>
+
+        <br>
+
+        <input type="radio" name="imovel" value="Proprio" required>
+        Próprio
+
+        <input type="radio" name="imovel" value="Alugado">
+        Alugado
+
+        <br><br>
+
+        <label>Quantas pessoas moram na residência?</label> <br>
+
+        <input type="radio" name="moradores" value="1" required>
+        1
+        
+        <input type="radio" name="moradores" value="2">
+        2   
+
+        <input type="radio" name="moradores" value="3 ou mais">
+        3 ou mais
+
+        <br>
+
+        <label>Todos os moradores concordam com a adoção?</label>
+
+        <br>
+
+        <input type="radio" name="concordancia" value="Sim" required>
+        Sim
+
+        <input type="radio" name="concordancia" value="Não">
+        Não
+
+        <br><br>
+
+        <h2>Sobre os cuidados com o pet</h2>
+
+        <label>Você já teve animais anteriormente?</label>
+
+        <br>
+
+        <input type="radio" name="experiencia" value="Sim" required>
+        Sim
+
+        <input type="radio" name="experiencia" value="Não">
+        Não
+
+        <br><br>
+
+        <label>Há outros animais na residência?</label>
+
+        <br>
+
+        <input type="radio" name="outrosAnimais" value="Sim" required>
+        Sim
+
+        <input type="radio" name="outrosAnimais" value="Não">
+        Não
+
+        <br><br>
+
+        <label>Quanto tempo o pet ficará sozinho por dia?</label>
+
+        <br>
+
+        <input type="radio" name="tempoSozinho" value="Nenhum">
+        Nenhum
+
+        <input type="radio" name="tempoSozinho" value="Ate 4 horas">
+        Até 4 horas
+
+        <input type="radio" name="tempoSozinho" value="De 4 a 8 horas">
+        De 4 a 8 horas
+
+        <input type="radio" name="tempoSozinho" value="Mais de 8 horas">
+        Mais de 8 horas
+
+        <br><br>
+
+        <label>Você tem condições de arcar com alimentação, vacinas e cuidados veterinários?</label>
+
+        <br>
+
+        <input type="radio" name="condicoes" value="Sim" required>
+        Sim
+
+        <input type="radio" name="condicoes" value="Não">
+        Não
+
+        <br><br>
+
+        <label>Por que você deseja adotar um pet?</label>
+
+        <br>
+
+        <textarea name="motivo" rows="4" required></textarea>
+
+        <br><br>
+
+        <label>O que você faria se não pudesse mais cuidar do animal?</label>
+
+        <br>
+
+        <textarea name="responsabilidade" rows="4" required></textarea>
+
+        <br><br>
+
+        <input type="checkbox" name="compromisso" required>
+        Comprometo-me a cuidar do animal com responsabilidade.
+
+        <br><br>
+
+        <input type="submit" value="Enviar formulário">
+
     </form>
-    
 
-    
 </body>
 </html>

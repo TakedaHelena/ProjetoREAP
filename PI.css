@@ -10,10 +10,6 @@
     form {
         width: 80%;
     }
-
-    table {
-        width: 95%;
-    }
 }
 
 
@@ -30,10 +26,6 @@
         width: 85%;
     }
 
-    table {
-        width: 100%;
-        font-size: 12px;
-    }
 }
 
 
@@ -44,9 +36,8 @@ html {
 
 
 body{
-    background-color: rgb(255, 255, 255);
-
-
+    background-image: url('fundopatinha.png');
+    background-size: 500px 500px;
 }
 
 h1 {
@@ -59,18 +50,28 @@ h1 {
 
 h2 {
     text-align: center;
-    color: #407aa0;
+    color: #2e6488;
     font-size: 30px;
     margin-top: 20px;
+}
+
+main h2{
+    display: flex;
+    color: #c1cae4;
+    justify-content: center;
+    margin-left: 1%;
+    margin-right: 50%;
+    background-color: rgb(68, 99, 155);
 }
 
 
 p {
     text-align: center;
-    color: rgb(130, 156, 211);
+    color: rgb(70, 100, 165);
     font-size: 20px;
     margin-top: 20px;
     font-size: 25px;
+    align-items: center;
 }
 
 a {
@@ -80,23 +81,54 @@ a {
 
 
 .caixa{
-  background-color: rgb(202, 239, 253);
+  background-color: rgb(152, 184, 231);
   margin: auto;
-  margin-left: 20%;
-  margin-right: 15%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
   border-radius: 15px;
-  
-}
-
-.pesquisa{
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  text-align: center;
-  background-color: #cfecff;
-  margin-left: 20%;
-  margin-right: 20%;
+  flex-direction: column;
+   padding: 20px;
+  width: 60%; 
 }
 
+
+.cont {
+  display: flex;               /* coloca texto e imagem lado a lado */
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+
+.cont img {
+  width: 700px;                /* largura da imagem */
+  height: 500px;               /* altura igual → quadrado */
+  object-fit: cover;           /* faz a imagem se encaixar sem distorcer */
+}
+
+
+.pesquisa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+
+.pesquisa a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #88a7d4;
+    color: #ced6e9;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 30px;
+}
 
 
