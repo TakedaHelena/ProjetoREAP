@@ -36,16 +36,16 @@ html {
 
 
 body{
-    background-image: url('fundopatinha.png');
+    background-color: antiquewhite;
     background-size: 500px 500px;
 }
 
 h1 {
     text-align: center;
-    color: #a2b1da;
+    color: #a07043;
     font-size: 50px;
     margin-top: 20px;
-    background-color: rgb(68, 99, 155);
+    background-color: rgb(46, 37, 37);
 }
 
 h2 {
